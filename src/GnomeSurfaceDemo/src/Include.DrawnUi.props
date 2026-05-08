@@ -1,0 +1,7 @@
+<Project>
+	<ItemGroup>
+		<Compile Include="../../../vendors/drawnui/src/Maui/DrawnUi/Controls/Button/SkiaButton.cs" Link="DrawnUi/Controls/Button/SkiaButton.cs" />
+
+		<Compile Include="../../../vendors/drawnui/src/Maui/DrawnUi/Draw/Layout/SkiaLayout.cs" Link="DrawnUi/Draw/Layout/SkiaLayout.cs" />
+	</ItemGroup>
+</Project>

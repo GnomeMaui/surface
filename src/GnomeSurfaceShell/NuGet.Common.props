@@ -1,0 +1,12 @@
+<Project>
+	<PropertyGroup>
+		<PackAsTool>true</PackAsTool>
+
+		<ToolCommandName>gnomesurfaceshell</ToolCommandName>
+
+		<Title>GNOME Surface Shell</Title>
+		<Description>Next-generation GNOME Surface Shell.</Description>
+
+		<PackageId>gnomesurface.shell</PackageId>
+	</PropertyGroup>
+</Project>

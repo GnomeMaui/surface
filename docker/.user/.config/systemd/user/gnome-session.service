@@ -1,0 +1,13 @@
+[Unit]
+Description=GNOME Session
+After=dbus.service
+Requires=dbus.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/dotnet gnomesurfacesession runAs=leader session=gnome
+Restart=no
+
+[Install]
+WantedBy=default.target

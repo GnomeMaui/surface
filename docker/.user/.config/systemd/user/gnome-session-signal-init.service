@@ -1,0 +1,6 @@
+[Unit]
+Description=Signal initialization done to GNOME Session Manager
+
+[Service]
+Type=oneshot
+ExecStart=%GM_LIBEXEC_DIR%/gnome-session-ctl --signal-init

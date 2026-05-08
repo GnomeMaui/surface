@@ -1,0 +1,29 @@
+{
+	"recommendations": [
+		"ms-dotnettools.vscode-dotnet-runtime",
+		"ms-dotnettools.csharp",
+		"ms-dotnettools.csdevkit",
+		"ms-dotnettools.dotnet-maui",
+		"naumovs.color-highlight",
+		"dbaeumer.vscode-eslint",
+		"github.copilot-chat",
+		"stylelint.vscode-stylelint",
+		"vscode-icons-team.vscode-icons",
+		"oderwat.indent-rainbow",
+		"gruntfuggly.todo-tree",
+		"davidanson.vscode-markdownlint",
+		"editorconfig.editorconfig",
+		"heaths.vscode-guid",
+		"editorconfig.editorconfig",
+		"yahyabatulu.vscode-markdown-alert",
+		"bierner.markdown-emoji",
+		"xoofx.scriban",
+		"uctakeoff.vscode-counter",
+		"antaalt.shader-validator",
+		"bierner.markdown-mermaid",
+		"ms-vscode.powershell",
+		"openai.chatgpt",
+		"ms-azuretools.vscode-containers",
+		"mkhl.shfmt"
+	]
+}

@@ -1,0 +1,45 @@
+dotnet run
+Original NuGet source URL: https://api.nuget.org/v3/index.json
+Rewritten NuGet source URL: https://api.nuget.org/v3/index.json
+Loaded remote NuGet service index from: https://api.nuget.org/v3/index.json
+Loaded NuGet service index resources: 40
+Service index entry: SearchQueryService -> https://azuresearch-usnc.nuget.org/query
+Service index entry: SearchQueryService -> https://azuresearch-ussc.nuget.org/query
+Service index entry: SearchAutocompleteService -> https://azuresearch-usnc.nuget.org/autocomplete
+Service index entry: SearchAutocompleteService -> https://azuresearch-ussc.nuget.org/autocomplete
+Service index entry: SearchGalleryQueryService/3.0.0-rc -> https://azuresearch-usnc.nuget.org/
+Service index entry: SearchGalleryQueryService/3.0.0-rc -> https://azuresearch-ussc.nuget.org/
+Service index entry: RegistrationsBaseUrl -> https://api.nuget.org/v3/registration5-semver1/
+Service index entry: PackageBaseAddress/3.0.0 -> https://api.nuget.org/v3-flatcontainer/
+Service index entry: LegacyGallery -> https://www.nuget.org/api/v2
+Service index entry: LegacyGallery/2.0.0 -> https://www.nuget.org/api/v2
+Service index entry: PackagePublish/2.0.0 -> https://www.nuget.org/api/v2/package
+Service index entry: SymbolPackagePublish/4.9.0 -> https://www.nuget.org/api/v2/symbolpackage
+Service index entry: SearchQueryService/3.0.0-rc -> https://azuresearch-usnc.nuget.org/query
+Service index entry: SearchQueryService/3.0.0-rc -> https://azuresearch-ussc.nuget.org/query
+Service index entry: SearchQueryService/3.5.0 -> https://azuresearch-usnc.nuget.org/query
+Service index entry: SearchQueryService/3.5.0 -> https://azuresearch-ussc.nuget.org/query
+Service index entry: SearchAutocompleteService/3.0.0-rc -> https://azuresearch-usnc.nuget.org/autocomplete
+Service index entry: SearchAutocompleteService/3.0.0-rc -> https://azuresearch-ussc.nuget.org/autocomplete
+Service index entry: SearchAutocompleteService/3.5.0 -> https://azuresearch-usnc.nuget.org/autocomplete
+Service index entry: SearchAutocompleteService/3.5.0 -> https://azuresearch-ussc.nuget.org/autocomplete
+Service index entry: RegistrationsBaseUrl/3.0.0-rc -> https://api.nuget.org/v3/registration5-semver1/
+Service index entry: ReportAbuseUriTemplate/3.0.0-rc -> https://www.nuget.org/packages/{id}/{version}/ReportAbuse
+Service index entry: PackageDisplayMetadataUriTemplate/3.0.0-rc -> https://api.nuget.org/v3/registration5-semver1/{id-lower}/index.json
+Service index entry: PackageVersionDisplayMetadataUriTemplate/3.0.0-rc -> https://api.nuget.org/v3/registration5-semver1/{id-lower}/{version-lower}.json
+Service index entry: SearchQueryService/3.0.0-beta -> https://azuresearch-usnc.nuget.org/query
+Service index entry: SearchQueryService/3.0.0-beta -> https://azuresearch-ussc.nuget.org/query
+Service index entry: SearchAutocompleteService/3.0.0-beta -> https://azuresearch-usnc.nuget.org/autocomplete
+Service index entry: SearchAutocompleteService/3.0.0-beta -> https://azuresearch-ussc.nuget.org/autocomplete
+Service index entry: RegistrationsBaseUrl/3.0.0-beta -> https://api.nuget.org/v3/registration5-semver1/
+Service index entry: ReportAbuseUriTemplate/3.0.0-beta -> https://www.nuget.org/packages/{id}/{version}/ReportAbuse
+Service index entry: PackageDetailsUriTemplate/5.1.0 -> https://www.nuget.org/packages/{id}/{version}?_src=template
+Service index entry: OwnerDetailsUriTemplate/6.11.0 -> https://www.nuget.org/profiles/{owner}?_src=template
+Service index entry: RegistrationsBaseUrl/3.4.0 -> https://api.nuget.org/v3/registration5-gz-semver1/
+Service index entry: RegistrationsBaseUrl/3.6.0 -> https://api.nuget.org/v3/registration5-gz-semver2/
+Service index entry: RegistrationsBaseUrl/Versioned -> https://api.nuget.org/v3/registration5-gz-semver2/
+Service index entry: RepositorySignatures/4.7.0 -> https://api.nuget.org/v3-index/repository-signatures/4.7.0/index.json
+Service index entry: RepositorySignatures/5.0.0 -> https://api.nuget.org/v3-index/repository-signatures/5.0.0/index.json
+Service index entry: VulnerabilityInfo/6.7.0 -> https://api.nuget.org/v3/vulnerabilities/index.json
+Service index entry: Catalog/3.0.0 -> https://api.nuget.org/v3/catalog0/index.json
+Service index entry: ReadmeUriTemplate/6.13.0 -> https://api.nuget.org/v3-flatcontainer/{lower_id}/{lower_version}/readme

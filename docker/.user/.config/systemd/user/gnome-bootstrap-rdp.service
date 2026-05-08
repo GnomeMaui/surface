@@ -1,0 +1,13 @@
+[Unit]
+Description=Bootstrap GNOME Remote Desktop
+After=org.gnome.Shell@user.service gnome-session.service gnome-settings-daemon.target dbus.service gnome-session-signal-init.service
+Before=gnome-remote-desktop-headless.service
+Requires=org.gnome.Shell@user.service gnome-session.service gnome-settings-daemon.target gnome-session-signal-init.service
+
+[Service]
+Type=oneshot
+ExecStart=/home/%GM_RDP_USER%/.local/bin/gnome-bootstrap-rdp.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,124 @@
+name: gnomesurface-fedora44
+
+services:
+  rdp:
+    container_name: gnomesurface-fedora44
+    image: gnomesurface/fedora44:${GM_TARGETARCH}
+    build:
+      context: ../..
+      dockerfile: fedora44/Dockerfile
+      args:
+        GM_TARGETARCH: ${GM_TARGETARCH}
+
+        GM_IP: ${GM_IP}
+
+        GM_HOSTNAME: ${GM_HOSTNAME}
+
+        GM_RDP_DOCKER_PORT: ${GM_RDP_DOCKER_PORT}
+        GM_RDP_USER_UID: ${GM_RDP_USER_UID}
+        GM_RDP_USER_GID: ${GM_RDP_USER_GID}
+        GM_RDP_USER: ${GM_RDP_USER}
+
+        GM_TIMEZONE: ${GM_TIMEZONE}
+        GM_LOCALES: ${GM_LOCALES}
+        GM_LOCALE: ${GM_LOCALE}
+        GM_LANGUAGE: ${GM_LANGUAGE}
+        GM_KEYMAP: ${GM_KEYMAP}
+        GM_KEYMODEL: ${GM_KEYMODEL}
+
+    env_file:
+      - ../../shared.env
+      - fedora44.env
+
+    secrets:
+      - rdp_pass
+      - rdp_tls_key
+      - rdp_tls_crt
+
+    hostname: ${GM_HOSTNAME}
+
+    ports:
+      - "${GM_RDP_HOST_PORT}:${GM_RDP_DOCKER_PORT}"
+
+    devices:
+      - /dev/fuse:/dev/fuse
+      - /dev/dri:/dev/dri
+
+    privileged: true
+
+    cap_add:
+      - SYS_ADMIN
+
+    security_opt:
+      - apparmor:unconfined
+      - seccomp:unconfined
+
+    tmpfs:
+      - /run
+      - /run/lock
+      - /tmp
+
+    cgroup: host
+    shm_size: "512m"
+    restart: unless-stopped
+
+    volumes:
+      - /sys/fs/cgroup:/sys/fs/cgroup:rw
+      - home:/home/${GM_RDP_USER}
+      - home_local_share_gnome-surface:/home/${GM_RDP_USER}/.local/share/gnome-surface
+      - home_local_share_backgrounds:/home/${GM_RDP_USER}/.local/share/backgrounds
+      - home_var_app:/home/${GM_RDP_USER}/.var/app
+      - home_local_share_flatpak:/home/${GM_RDP_USER}/.local/share/flatpak
+      - var_cache_dnf:/var/cache/dnf
+      - var_lib_flatpak:/var/lib/flatpak
+      - ../../shared.env:/home/${GM_RDP_USER}/shared.env:ro
+      - ./fedora44.env:/home/${GM_RDP_USER}/shared.override.env:ro
+      - ../../overrides/fedora44/home/.local/bin/desktop-ext.sh:/home/${GM_RDP_USER}/.local/bin/desktop-ext.sh:ro
+      - ../../overrides/shared/home/.local/bin/desktop.sh:/home/${GM_RDP_USER}/.local/bin/desktop.sh:ro
+      - ../../overrides/shared/home/.face:/home/${GM_RDP_USER}/.face:ro
+
+    networks:
+      default:
+        ipv4_address: ${GM_IP}
+
+volumes:
+  home:
+    driver: local
+    driver_opts:
+      type: none
+      device: ../../volumes/fedora44/home
+      o: bind
+  home_var_app:
+    external: true
+    name: gnomesurface_home_var_app
+  home_local_share_backgrounds:
+    external: true
+    name: gnomesurface_home_local_share_backgrounds
+  home_local_share_gnome-surface:
+    external: true
+    name: gnomesurface_home_local_share_gnomesurface
+  home_local_share_flatpak:
+    external: true
+    name: gnomesurface_home_local_share_flatpak
+  var_lib_flatpak:
+    external: true
+    name: gnomesurface_var_lib_flatpak
+  var_cache_dnf:
+    driver: local
+    driver_opts:
+      type: none
+      device: ../../volumes/fedora44/var_cache_dnf
+      o: bind
+
+secrets:
+  rdp_pass:
+    file: ../../.secret/rdp-pass
+  rdp_tls_key:
+    file: ../../.secret/rdp-tls.key
+  rdp_tls_crt:
+    file: ../../.secret/rdp-tls.crt
+
+networks:
+  default:
+    external: true
+    name: gnomesurface-network

@@ -1,0 +1,8 @@
+<Project>
+	<PropertyGroup>
+		<Title>GNOME Surface Canvas</Title>
+		<Description>Next-generation GNOME Surface Canvas. Based on SkiaSharp and supports CPU and GPU rendering.</Description>
+
+		<PackageId>GnomeSurface.Canvas</PackageId>
+	</PropertyGroup>
+</Project>

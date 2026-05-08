@@ -1,0 +1,8 @@
+[Unit]
+Description=GNOME Settings Daemon Components
+After=gnome-session.service
+Requires=gnome-session.service
+PartOf=graphical-session.target
+
+[Install]
+WantedBy=default.target

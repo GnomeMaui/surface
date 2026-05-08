@@ -1,0 +1,36 @@
+<Project>
+	<PropertyGroup>
+		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+
+		<Copyright>© Copyright Ferenc Czirok. All rights reserved.</Copyright>
+		<Owners>Ferenc Czirok</Owners>
+		<Authors>Ferenc Czirok</Authors>
+
+		<PackageVersion>$(GnomeSurfaceVersion)</PackageVersion>
+		<PackageTags>gnomesurface;dotnet;dotnet-tool;gnome;gnomeshell;mutter;clutter;skia;skiasharp;gpu;shader;xaml;signalr;wayland;csharp;linux;desktop;shell;plugin</PackageTags>
+
+		<PackageIcon>Icon.png</PackageIcon>
+		<PackageReadmeFile>NuGet.md</PackageReadmeFile>
+
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageProjectUrl>https://github.com/gnomemaui/surface</PackageProjectUrl>
+
+		<GenerateDocumentationFile>false</GenerateDocumentationFile>
+
+		<IncludeSymbols>false</IncludeSymbols>
+
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/gnomemaui/surface.git</RepositoryUrl>
+		<RepositoryBranch>main</RepositoryBranch>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include="../../../LICENSE" Pack="True" PackagePath="\" />
+		<None Include="../../../assets/nuget/gnomesurface-128.png" Pack="True" PackagePath="Icon.png" Link="Icon.png" />
+		<None Include="../NuGet.md" Pack="True" PackagePath="\" />
+	</ItemGroup>
+
+	<Target Name="CopyPackage" AfterTargets="Pack">
+		<Move SourceFiles="$(OutputPath)../$(PackageId).$(PackageVersion).nupkg" DestinationFolder="$(ProjectDir)../../../.vscode/.linux/.dotnet/library-packs/" />
+	</Target>
+</Project>

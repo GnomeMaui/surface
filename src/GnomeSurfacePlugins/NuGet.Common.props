@@ -1,0 +1,12 @@
+<Project>
+	<PropertyGroup>
+		<PackAsTool>true</PackAsTool>
+
+		<ToolCommandName>gnomesurfaceplugindefault</ToolCommandName>
+
+		<Title>GNOME Surface Plugin Default</Title>
+		<Description>GNOME Surface Plugin Default.</Description>
+
+		<PackageId>gnomesurfaceplugin.default</PackageId>
+	</PropertyGroup>
+</Project>

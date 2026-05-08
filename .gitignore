@@ -1,0 +1,66 @@
+# Visual Studio Code
+.vscode/.extensions
+.vscode/.user.data
+.vscode/settings.json
+.vscode/.linux/.dotnet
+.vscode/.linux/.bash_history
+.vscode/.linux/.bashrc
+.vscode/.linux/.font_state
+.vscode/.linux/dotnet-install.sh
+.vscode/.linux/install.sh
+.vscode/.linux/oh-my-posh
+.vscode/.linux/oh-my-posh.json
+.vscode/.linux/fonts
+.vscode/.linux/scripts
+.vscode/.linux/templates
+.vscode/.linux/themes
+.vscode/.linux/vsicons-custom-icons
+.vscode/PSScriptAnalyzerSettings.psd1
+.editorconfig
+.gitattributes
+.markdownlint-cli2.yaml
+.nvmrc
+eslint.config.ts
+pnpm-lock.yaml
+pnpm-workspace.yaml
+stylelint.config.ts
+package.json
+
+# Linux packages
+**/os/arch
+**/os/deb
+**/os/rpm
+**/os/flatpak
+**/os/targz
+
+# Build results
+src/**/[Dd]ebug/
+src/**/[Rr]elease/
+src/**/[Bb]in/
+src/**/[Oo]bj/
+src/.reports
+
+apps/**/[Dd]ebug/
+apps/**/[Rr]elease/
+apps/**/[Bb]in/
+apps/**/[Oo]bj/
+
+**/publish
+**/node_modules/
+packages/**/dist
+**/BenchmarkDotNet.Artifacts/
+
+# Release archives
+devenv.tar.bz2
+
+# Docker
+
+docker/.reports
+docker/.secret
+docker/.user/.local/share/gnome-surface/nuget
+docker/volumes/shared/home_local_share_flatpak
+docker/volumes/shared/home_var_app
+docker/volumes/shared/var_lib_flatpak
+docker/volumes/arch
+docker/volumes/fedora44
+docker/volumes/ubuntu2604

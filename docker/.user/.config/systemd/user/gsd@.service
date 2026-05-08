@@ -1,0 +1,15 @@
+[Unit]
+Description=GNOME Settings Daemon - %i
+After=gnome-session.service
+PartOf=gnome-settings-daemon.target
+Requires=gnome-session.service
+BindsTo=gnome-session.service
+
+[Service]
+Type=simple
+ExecStart=%GM_LIBEXEC_DIR%/gsd-%i
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=gnome-settings-daemon.target

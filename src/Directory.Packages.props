@@ -1,0 +1,47 @@
+<Project>
+	<Import Project="Versions.props" />
+
+	<PropertyGroup>
+		<ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+	</PropertyGroup>
+	<ItemGroup>
+		<PackageVersion Include="EasyUIBinding.GirCore" Version="0.7.0" />
+		<PackageVersion Include="FontInfoParser" Version="1.0.0" />
+		<PackageVersion Include="Yaml.Localization" Version="10.0.0" />
+
+		<PackageVersion Include="GirCore.Adw-1" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Cairo-1.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Graphene-1.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.GdkPixbuf-2.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Gtk-4.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Gdk-4.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Gio-2.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.GLib-2.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Pango-1.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.PangoCairo-1.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.WebKit-6.0" Version="$(GirCoreVersion)" />
+
+		<PackageVersion Include="GirCore.GioUnix-2.0" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.Meta-18" Version="$(GirCoreVersion)" />
+		<PackageVersion Include="GirCore.St-18" Version="$(GirCoreVersion)" />
+
+		<PackageVersion Include="GnomeMaui" Version="$(GnomeMauiVersion)" />
+
+		<PackageVersion Include="SkiaSharp" Version="$(SkiaSharpVersion)" />
+		<PackageVersion Include="SkiaSharp.Views.Desktop.Common" Version="$(SkiaSharpVersion)" />
+		<PackageVersion Include="SkiaSharp.NativeAssets.Linux.NoDependencies" Version="$(SkiaSharpVersion)" />
+		<PackageVersion Include="Svg.Skia" Version="4.6.0" />
+
+		<PackageVersion Include="CommunityToolkit.Mvvm" Version="8.4.2" />
+
+		<PackageVersion Include="Microsoft.Extensions.Hosting" Version="10.0.5" />
+		<PackageVersion Include="Microsoft.Extensions.Localization" Version="10.0.5" />
+		<PackageVersion Include="Microsoft.Extensions.Logging.Console" Version="10.0.5" />
+
+		<PackageVersion Include="Tmds.Systemd.Logging" Version="0.8.0" />
+		<PackageVersion Include="Tmds.DBus.Protocol" Version="0.92.0" />
+
+		<PackageVersion Include="NuGet.Protocol" Version="7.3.1" />
+		<PackageVersion Include="NuGet.Packaging" Version="7.3.1" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,14 @@
+[Unit]
+Description=GNOME Session Monitor
+After=gnome-session.service
+Requires=gnome-session.service
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=%GM_LIBEXEC_DIR%/gnome-session-ctl --monitor
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

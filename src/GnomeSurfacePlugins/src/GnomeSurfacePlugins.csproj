@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<IsPublishable>true</IsPublishable>
+		<OutputType>Exe</OutputType>
+		<TargetFramework>net10.0</TargetFramework>
+	</PropertyGroup>
+
+	<Import Project="$(MSBuildThisFileDirectory)/../../NuGet.Common.props" />
+	<Import Project="$(MSBuildThisFileDirectory)/../NuGet.Common.props" />
+
+	<ItemGroup>
+		<PackageReference Include="GirCore.Gio-2.0" />
+		<PackageReference Include="GirCore.Gdk-4.0" />
+		<PackageReference Include="GirCore.GioUnix-2.0" />
+		<PackageReference Include="GirCore.Meta-18" />
+		<PackageReference Include="Microsoft.Extensions.Hosting" />
+		<PackageReference Include="SkiaSharp" />
+		<PackageReference Include="SkiaSharp.Views.Desktop.Common" />
+		<PackageReference Include="SkiaSharp.NativeAssets.Linux.NoDependencies" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="../../GnomeSurfaceCanvas/src/GnomeSurfaceCanvas.csproj" />
+	</ItemGroup>
+</Project>

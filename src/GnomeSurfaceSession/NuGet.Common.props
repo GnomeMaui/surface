@@ -1,0 +1,12 @@
+<Project>
+	<PropertyGroup>
+		<PackAsTool>true</PackAsTool>
+
+		<ToolCommandName>gnomesurfacesession</ToolCommandName>
+
+		<Title>GNOME Surface Session</Title>
+		<Description>A full GNOME Session Manager reimplemented in C#.</Description>
+
+		<PackageId>gnomesurface.session</PackageId>
+	</PropertyGroup>
+</Project>

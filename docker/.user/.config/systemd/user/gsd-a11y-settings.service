@@ -1,0 +1,14 @@
+[Unit]
+Description=GNOME Settings Daemon - Accessibility
+After=gnome-session.service
+Requires=gnome-session.service
+PartOf=gnome-settings-daemon.target
+
+[Service]
+Type=simple
+ExecStart=%GM_LIBEXEC_DIR%/gsd-a11y-settings
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=gnome-settings-daemon.target

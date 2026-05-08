@@ -1,0 +1,13 @@
+<Project>
+	<PropertyGroup>
+		<GnomeMauiVersion>10.0.20</GnomeMauiVersion>
+		<GnomeSurfaceVersion>0.0.111</GnomeSurfaceVersion>
+		<GnomeSurfaceFramework>net10.0</GnomeSurfaceFramework>
+
+		<!-- GirCore versions -->
+		<GirCoreVersion>0.8.0</GirCoreVersion>
+
+		<!-- SkiaSharp versions -->
+		<SkiaSharpVersion>3.119.2</SkiaSharpVersion>
+	</PropertyGroup>
+</Project>

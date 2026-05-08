@@ -1,0 +1,46 @@
+﻿DefaultFont: I18N/Fonts/NotoSans-Light.ttf
+
+Cultures:
+  - Name: en-US
+    Active: true
+    Default: true
+  - Name: cs-CZ
+    Active: true
+  - Name: hu-HU
+    Active: true
+  - Name: de-DE
+    Active: true
+  - Name: es-ES
+    Active: true
+  - Name: fr-FR
+    Active: true
+  - Name: ja-JP
+    Active: true
+    Font: I18N/Fonts/NotoSansJP-Light.ttf
+  - Name: zh-CN
+    Active: true
+    Font: I18N/Fonts/NotoSansSC-Light.ttf
+  - Name: ko-KR
+    Active: true
+    Font: I18N/Fonts/NotoSansKR-Light.ttf
+  - Name: ar-SA
+    Active: true
+    Rtl: true
+    Font: I18N/Fonts/NotoSansArabic-Light.ttf
+  - Name: he-IL
+    Active: true
+    Rtl: true
+    Font: I18N/Fonts/NotoSansHebrew-Light.ttf
+
+Selector:
+  en-US: English
+  cs-CZ: Čeština
+  hu-HU: Magyar
+  de-DE: Deutsch
+  es-ES: Español
+  fr-FR: Français
+  ja-JP: 日本語
+  zh-CN: 中文
+  ko-KR: 한국어
+  ar-SA: العربية
+  he-IL: עברית

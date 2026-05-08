@@ -1,0 +1,12 @@
+<Solution>
+	<Configurations>
+		<Platform Name="Any CPU" />
+		<Platform Name="x64" />
+		<Platform Name="x86" />
+	</Configurations>
+	<Project Path="GnomeSurfaceDemo/src/GnomeSurfaceDemo.csproj" />
+	<Project Path="GnomeSurfaceCanvas/src/GnomeSurfaceCanvas.csproj" />
+	<Project Path="GnomeSurfacePlugins/src/GnomeSurfacePlugins.csproj" />
+	<Project Path="GnomeSurfaceSession/src/GnomeSurfaceSession.csproj" />
+	<Project Path="GnomeSurfaceShell/src/GnomeSurfaceShell.csproj" />
+</Solution>

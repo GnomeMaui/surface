@@ -1,0 +1,14 @@
+[Unit]
+Description=Monitor trigger for GNOME Remote Desktop
+After=graphical-session.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+ExecStart=/home/%GM_RDP_USER%/.local/bin/gnome-monitor-trigger.sh
+Restart=on-failure
+RestartSec=5
+Slice=session.slice
+
+[Install]
+WantedBy=graphical-session.target

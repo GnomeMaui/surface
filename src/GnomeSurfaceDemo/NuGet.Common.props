@@ -1,0 +1,12 @@
+<Project>
+	<PropertyGroup>
+		<PackAsTool>true</PackAsTool>
+
+		<ToolCommandName>gnomesurfaceplugindemo</ToolCommandName>
+
+		<Title>GNOME Surface Plugin Demo</Title>
+		<Description>GNOME Surface Plugin Demo.</Description>
+
+		<PackageId>gnomesurfaceplugin.demo</PackageId>
+	</PropertyGroup>
+</Project>
